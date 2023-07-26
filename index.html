@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de registro</h1>
+    <form id="userForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" required>
+
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" required>
+
+      <button type="submit">Registrarme</button>
+    </form>
+  </div>
+
+  <div class="users-container">
+    <button id="showUsersButton">Ver ultimos usuarios registrados</button>
+    <h2>Registro de usuarios</h2>
+    <ul id="usersList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
